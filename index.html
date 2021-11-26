@@ -6,11 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/d31b131aeb.js" crossorigin="anonymous"></script>
     <!--[if lt IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/js-polyfills/0.1.43/polyfill.min.js" integrity="sha512-lvWiOP+aMKHllm4THsjzNleVuGOh0WGniJ3lgu/nvCbex1LlaQSxySUjAu/LTJw9FhnSL/PVYoQcckg1Q03+fQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <![endif]-->
 </head>
 <body>
+    <div class="nav">
+        <!-- Nav PC -->
+        <nav class="nav__pc">
+            <ul class="nav__list">
+                <li>
+                    <a href="#" class="nav__link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__link">About</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__link">Category</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__link">News</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- nav mobile -->
+        <i class="fas fa-bars nav__mobile-bar"></i>
+        <div class="nav__mobile-overlay"></div>
+        <nav class="nav__mobile">
+            <i class="fas fa-times nav__mobile-close"></i>
+            <ul class="nav__mobile-list">
+                <li>
+                    <a href="#" class="nav__mobile-link">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__mobile-link">About</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__mobile-link">Category</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__mobile-link">News</a>
+                </li>
+                <li>
+                    <a href="#" class="nav__mobile-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
     <div class="main">
         <!-- Product -->
         <div class="product">
@@ -83,5 +131,7 @@
             </div>
         </div>
     </div>
+    
+    <script src="./main.js"></script>
 </body>
 </html>

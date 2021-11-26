@@ -7,17 +7,111 @@ body {
     margin: 0;
 }
 
+/* Nav pc */
+
+.nav {
+    display: flex;
+    background-color: #333;
+    align-items: center;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin-right: 48px;
+}
+
+/* nav mobile */
+
+.nav__mobile-bar.fas {
+    color: #fff;
+    font-size: 32px;
+    line-height: 54.4px;
+    margin-left: 16px;
+    display: none;
+    cursor: pointer;
+}
+
+.nav__mobile-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.nav__mobile {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    display: none;
+    animation: navMobileAnimation ease 0.3s;
+    /* transition: all linear 0.3s; */
+}
+
+.nav__mobile.open, 
+.nav__mobile-overlay.open {
+    display: block;
+}
+
+.nav__mobile-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.nav__mobile-list {
+    list-style: none;
+    padding-top: 12px;
+}
+
+.nav__mobile-link {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    margin: 40px 0;
+    display: block;
+}
+
+@keyframes navMobileAnimation {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/*  */
+
 .main {
     width: 1200px;
     background-color: #fff; 
     max-width: 100%;
-    margin: 10px auto 360px;
+    margin: 0px auto 160px;
     padding-bottom: 20px;
 }
 /* Product */
 
 .product {
-    padding: 10px;
+    padding: 34px 16px 0px;
     display: flex;
 }
 
@@ -94,6 +188,14 @@ body {
         width: 100%;
     }
 
+    .nav__pc {
+        display: none;
+    }
+
+    .nav__mobile-bar.fas {
+        display: block;
+    }
+
 
 }
 
@@ -134,3 +236,4 @@ body {
         flex-direction: column;
     }
 }
+
